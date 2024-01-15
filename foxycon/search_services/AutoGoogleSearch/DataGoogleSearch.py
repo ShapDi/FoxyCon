@@ -4,19 +4,54 @@ from enum import Enum
 import yagooglesearch
 from googletrans import Translator
 
+from foxycon.exception_foxy_con import ExceptionLanguageFormat, \
+    ExceptionCountryFormat
 from foxycon.utils.AutoSessionRecipient import AutomaticSessionRecipient
-
+from foxycon.utils.AutoManagementProxy import AutoManagementProxy
 
 search = yagooglesearch.SearchClient
 
+
 class DataGoogleSearch:
-    def __init__(self, language, country, period, num = 100, text = 'search', type_search = 'standard'):
-        self._text = text
-        self._language = language
-        self._country = country
+    def __init__(self, language, country, period, num = 100, proxy = None, type_search = 'standard'):
+        self.language = language
+        self.country = country
+        self._google_cookies = AutomaticSessionRecipient().get_google()
+        self._proxy = self.get_proxy(proxy)
         self._period = period
         self._num = num
         self._type_search = self.get_status_settings(type_search)
+
+    @property
+    def country(self):
+        return self._country
+
+    @country.setter
+    def country(self, con):
+        try:
+            Country(con)
+            self._country = con
+        except Exception as ex:
+            raise ExceptionCountryFormat(f'The search country is incorrect: {ex}')
+
+    @property
+    def language(self):
+        return self._language
+
+    @language.setter
+    def language(self, lang):
+        try:
+            Language(lang)
+            self._language = lang
+        except Exception as ex:
+            raise ExceptionLanguageFormat(f'The search language is incorrect: {ex}')
+
+    @staticmethod
+    def get_proxy(data_proxy):
+        if data_proxy != None:
+            return AutoManagementProxy(data_proxy)
+        else:
+            return ""
 
     def get_status_settings(self, type_search):
         if TypeSearch[type_search].value == 2:
@@ -25,14 +60,15 @@ class DataGoogleSearch:
             self._text = data.text
 
     @staticmethod
-    def get_data(text, country, language, period, num):
+    def get_data(text, country, language, period, num, cookies, proxy):
         url = []
         links = search(f'{text}', tbs = Time[period].value, country = country,
                        http_429_cool_off_time_in_minutes = 15,
                        http_429_cool_off_factor = 1.5,
-                       google_exemption = AutomaticSessionRecipient().get_google(),
+                       google_exemption = cookies,
                        lang_result = language,
                        verbosity = 4,
+                       proxy = proxy,
                        verify_ssl = False,
                        num = num
                        )
@@ -52,45 +88,54 @@ class DataGoogleSearch:
             url.append(link)
         return url
 
-    def get_google_dork(self):
-        return self.get_data(text = f'{self._text}', country = self._country, language = self._language,
-                             period = self._period, num = self._num)
+    def get_google_dork(self, text):
+        return self.get_data(text = f'{text}', country = self._country, language = self._language,
+                             period = self._period, cookies = self._google_cookies, num = self._num,
+                             proxy = self._proxy)
 
-    def get_facebook(self):
-        return self.get_data(text = f'site:facebook.com {self._text}', country = self._country,
-                             language = self._language, period = self._period, num = self._num)
+    def get_facebook(self, text):
+        return self.get_data(text = f'site:facebook.com {text}', country = self._country,
+                             language = self._language, period = self._period, cookies = self._google_cookies,
+                             num = self._num, proxy = self._proxy)
 
-    def get_twitter(self):
-        return self.get_data(text = f'site:twitter.com {self._text}', country = self._country,
-                             language = self._language, period = self._period, num = self._num)
+    def get_twitter(self, text):
+        return self.get_data(text = f'site:twitter.com {text}', country = self._country,
+                             language = self._language, period = self._period, num = self._num, proxy = self._proxy)
 
-    def get_vk(self):
-        return self.get_data(text = f'site:vk.com {self._text}', country = self._country, language = self._language,
-                             period = self._period, num = self._num)
+    def get_vk(self, text):
+        return self.get_data(text = f'site:vk.com {text}', country = self._country, language = self._language,
+                             period = self._period, cookies = self._google_cookies, num = self._num,
+                             proxy = self._proxy)
 
-    def get_discord(self):
-        return self.get_data(text = f'site:vk.com {self._text}', country = self._country, language = self._language,
-                             period = self._period, num = self._num)
+    def get_discord(self, text):
+        return self.get_data(text = f'site:vk.com {text}', country = self._country, language = self._language,
+                             period = self._period, cookies = self._google_cookies, num = self._num,
+                             proxy = self._proxy)
 
-    def get_discord(self):
-        return self.get_data(text = f'site:discord.com {self._text}', country = self._country,
-                             language = self._language, period = self._period, num = self._num)
+    def get_discord(self, text):
+        return self.get_data(text = f'site:discord.com {text}', country = self._country,
+                             language = self._language, period = self._period, cookies = self._google_cookies,
+                             num = self._num, proxy = self._proxy)
 
-    def get_instagram(self):
-        return self.get_data(text = f'site:www.instagram.com {self._text}', country = self._country,
-                             language = self._language, period = self._period, num = self._num)
+    def get_instagram(self, text):
+        return self.get_data(text = f'site:www.instagram.com {text}', country = self._country,
+                             language = self._language, period = self._period, cookies = self._google_cookies,
+                             num = self._num, proxy = self._proxy)
 
-    def get_instagram_hashtag(self):
-        return self.get_data(text = f'site:www.instagram.com #{self._text}', country = self._country,
-                             language = self._language, period = self._period, num = self._num)
+    def get_instagram_hashtag(self, text):
+        return self.get_data(text = f'site:www.instagram.com #{text}', country = self._country,
+                             language = self._language, period = self._period, cookies = self._google_cookies,
+                             num = self._num, proxy = self._proxy)
 
-    def get_instagram_reels(self):
-        return self.get_data(text = f'site:https://www.instagram.com inurl:reels #{self._text}', country = self._country,
-                             language = self._language, period = self._period, num = self._num)
+    def get_instagram_reels(self, text):
+        return self.get_data(text = f'site:https://www.instagram.com inurl:reels #{text}', country = self._country,
+                             language = self._language, period = self._period, cookies = self._google_cookies,
+                             num = self._num, proxy = self._proxy)
 
-    def get_youtube(self):
-        return self.get_data(text = f'site:youtube.com {self._text}', country = self._country,
-                             language = self._language, period = self._period, num = self._num)
+    def get_youtube(self, text):
+        return self.get_data(text = f'site:youtube.com {text}', country = self._country,
+                             language = self._language, period = self._period, cookies = self._google_cookies,
+                             num = self._num, proxy = self._proxy)
 
 
 class Country(Enum):
@@ -99,10 +144,12 @@ class Country(Enum):
     brazil = 'br'
     canada = 'ca'
 
+
 class Language(Enum):
     english = 'lang_en'
-    portuguese = 'pt'
+    portuguese = 'lang_pt'
     hindi = 'lang_hi'
+
 
 class Time(Enum):
     year = 'qdr:y'

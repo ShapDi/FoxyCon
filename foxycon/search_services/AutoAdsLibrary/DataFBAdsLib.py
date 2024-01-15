@@ -32,22 +32,23 @@ class DataFBAdsLib:
         return data
 
     @staticmethod
-    def get_data_banners(data):
+    def get_data_banners(name, data):
         soup = BeautifulSoup(data, "html5lib")
         baners = soup.find_all(class_ = '_7jvw x2izyaf x1hq5gj4 x1d52u69')
         data = []
         for baner in baners:
             text = [i for i in re.split("===", baner.get_text(separator = "===")) if i != '\u200b']
-            text = HandlerBanner().get_data_text(text)
+            text = HandlerBanner().get_data_text(name, text)
             link = HandlerBanner().get_data_link([link.get('href') for link in baner.find_all(name = 'a')])
             data.append(text | link)
         return data
 
     def get_data(self):
         data = self.get_html(self._country, self._text)
-        data = self.get_data_banners(data)
+        data = self.get_data_banners(self._text, data)
         print(data)
         return data
+
 
 class HandlerBanner:
 
@@ -88,8 +89,9 @@ class HandlerBanner:
             data = {'goal_ads': "no"}
         return data
 
-    def get_data_text(self, text):
-        data = self.get_id(text)
+    def get_data_text(self, name, text):
+        data = {'request': name}
+        data.update(self.get_id(text))
         data.update(self.get_date(text))
         data.update(self.get_activity(text))
         data.update(self.get_usage(text))
@@ -101,6 +103,7 @@ class HandlerBanner:
         goal_ads = self.get_goal_ads(links)
         data.update(goal_ads)
         return data
+
 
 class Country(Enum):
     Canada = 'CA'
