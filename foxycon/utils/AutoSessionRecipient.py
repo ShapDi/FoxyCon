@@ -58,11 +58,11 @@ class GoogleSessionRecipient:
 
     @staticmethod
     def clearing_cookies(cookies):
-        new_cookies = {}
+        new_cookies = ""
         for cook in cookies:
-            new_cookies[cook.get('name')] = cook.get('value')
+            new_cookies = new_cookies + f"{cook.get('name')}:{cook.get('value')}"
+            # new_cookies[cook.get('name')] = cook.get('value')
         return new_cookies
-
     @classmethod
     def get_cookies(cls):
         driver = cls.get_drive()

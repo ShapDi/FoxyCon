@@ -46,7 +46,6 @@ class DataFBAdsLib:
     def get_data(self):
         data = self.get_html(self._country, self._text)
         data = self.get_data_banners(self._text, data)
-        print(data)
         return data
 
 
@@ -71,7 +70,7 @@ class HandlerBanner:
         return data
 
     def get_description(self, line):
-        text = line[8:-1]
+        text = line[10:-1]
         data = ""
         for word in text:
             data = data + str(word)
@@ -89,8 +88,9 @@ class HandlerBanner:
             data = {'goal_ads': "no"}
         return data
 
-    def get_data_text(self, name, text):
+    def get_data_text(self, name, country, text):
         data = {'request': name}
+        data.update({'country': Country[country]})
         data.update(self.get_id(text))
         data.update(self.get_date(text))
         data.update(self.get_activity(text))
@@ -111,3 +111,4 @@ class Country(Enum):
     Argentina = 'AR'
     Colombia = 'CO'
     Bangladesh = 'BD'
+    Brazi = 'BZ'

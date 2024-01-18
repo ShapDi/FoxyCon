@@ -1,8 +1,5 @@
 import pandas as pd
 
-from foxycon.search_services.AutoAdsLibrary.DataFBAdsLib import DataFBAdsLib
-
-
 class AutoTablePacker:
     def __init__(self, name, path, data):
         self._name = name

@@ -1,26 +1,66 @@
 import time
+import logging
+import urllib
 from enum import Enum
 
 import yagooglesearch
 from googletrans import Translator
 
-from foxycon.exception_foxy_con import ExceptionLanguageFormat, \
+from foxycon.search_services.exception import ExceptionLanguageFormat, \
     ExceptionCountryFormat
 from foxycon.utils.AutoSessionRecipient import AutomaticSessionRecipient
 from foxycon.utils.AutoManagementProxy import AutoManagementProxy
 
-search = yagooglesearch.SearchClient
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+console_handler = logging.StreamHandler()
+logger.addHandler(console_handler)
 
 
 class DataGoogleSearch:
+
     def __init__(self, language, country, period, num = 100, proxy = None, type_search = 'standard'):
+        self._search_manager = None
         self.language = language
         self.country = country
+        self.period = period
         self._google_cookies = AutomaticSessionRecipient().get_google()
-        self._proxy = self.get_proxy(proxy)
-        self._period = period
         self._num = num
         self._type_search = self.get_status_settings(type_search)
+        self.get_search_manager(self._language, self._country, self._period, num, proxy, type_search)
+
+    def get_search_manager(self, language, country, period, num, proxy, type_search):
+        self._search_manager = []
+        if proxy is None:
+            self._search_manager.append(yagooglesearch.SearchClient(f'fox', tbs = period, country = country,
+                                        google_exemption = AutomaticSessionRecipient().get_google(),
+                                        lang_result = language,
+                                        verbosity = 4,
+                                        verify_ssl = False,
+                                        proxy = None,
+                                        num = num,
+                                        http_429_cool_off_time_in_minutes = 45,
+                                        http_429_cool_off_factor = 1.5,
+                                        minimum_delay_between_paged_results_in_seconds = 7
+                                        ))
+            self._search_manager = AutoManagementProxy(self._search_manager)
+        else:
+            for pro in proxy:
+                self._search_manager.append(
+                    yagooglesearch.SearchClient(f'fox', tbs = period, country = country,
+                                                google_exemption = AutomaticSessionRecipient().get_google(),
+                                                lang_result = language,
+                                                verbosity = 4,
+                                                verify_ssl = False,
+                                                proxy = pro,
+                                                num = num,
+                                                yagooglesearch_manages_http_429s = False,
+                                                minimum_delay_between_paged_results_in_seconds = 7
+                                                )
+                )
+            self._search_manager = AutoManagementProxy(self._search_manager)
+
 
     @property
     def country(self):
@@ -46,12 +86,28 @@ class DataGoogleSearch:
         except Exception as ex:
             raise ExceptionLanguageFormat(f'The search language is incorrect: {ex}')
 
-    @staticmethod
-    def get_proxy(data_proxy):
-        if data_proxy != None:
-            return AutoManagementProxy(data_proxy)
+    @property
+    def period(self):
+        return self._period
+
+    @period.setter
+    def period(self, per):
+        try:
+            Time(per)
+            self._period = per
+        except Exception as ex:
+            raise ExceptionCountryFormat(f'The search country is incorrect: {ex}')
+
+    @property
+    def search_manager(self):
+        return self._search_manager
+
+    @period.setter
+    def proxy(self, pro):
+        if pro is None:
+            self._search_manager = None
         else:
-            return ""
+            self._proxy = AutoManagementProxy(pro)
 
     def get_status_settings(self, type_search):
         if TypeSearch[type_search].value == 2:
@@ -60,82 +116,76 @@ class DataGoogleSearch:
             self._text = data.text
 
     @staticmethod
-    def get_data(text, country, language, period, num, cookies, proxy):
-        url = []
-        links = search(f'{text}', tbs = Time[period].value, country = country,
-                       http_429_cool_off_time_in_minutes = 15,
-                       http_429_cool_off_factor = 1.5,
-                       google_exemption = cookies,
-                       lang_result = language,
-                       verbosity = 4,
-                       proxy = proxy,
-                       verify_ssl = False,
-                       num = num
-                       )
-        links.verify_ssl = False
-        links.assign_random_user_agent()
-
-        time.sleep(60)
-        links = links.search()
-
-        if "HTTP_429_DETECTED" in links:
-            print("HTTP 429 detected...it's up to you to modify your search.")
-            links.remove("HTTP_429_DETECTED")
-            print("URLs found before HTTP 429 detected...")
-            for link in links:
-                url.append(link)
-        for link in links:
-            url.append(link)
-        return url
+    def get_data(text, search_manager):
+        one_manager = search_manager.get_proxy()
+        one_manager.query = text
+        one_manager.update_urls()
+        logger.info(one_manager.query)
+        logger.info(one_manager.proxy)
+        data = ManageGoogleSearch().get_search_results(search_manager = one_manager)
+        return data
 
     def get_google_dork(self, text):
-        return self.get_data(text = f'{text}', country = self._country, language = self._language,
-                             period = self._period, cookies = self._google_cookies, num = self._num,
-                             proxy = self._proxy)
+        return self.get_data(text = f'{text}', )
 
     def get_facebook(self, text):
-        return self.get_data(text = f'site:facebook.com {text}', country = self._country,
-                             language = self._language, period = self._period, cookies = self._google_cookies,
-                             num = self._num, proxy = self._proxy)
+        return self.get_data(text = f'site:facebook.com {text}',)
 
     def get_twitter(self, text):
-        return self.get_data(text = f'site:twitter.com {text}', country = self._country,
-                             language = self._language, period = self._period, num = self._num, proxy = self._proxy)
+        return self.get_data(text = f'site:twitter.com {text}',)
 
     def get_vk(self, text):
-        return self.get_data(text = f'site:vk.com {text}', country = self._country, language = self._language,
-                             period = self._period, cookies = self._google_cookies, num = self._num,
-                             proxy = self._proxy)
+        return self.get_data(text = f'site:vk.com {text}',)
 
     def get_discord(self, text):
-        return self.get_data(text = f'site:vk.com {text}', country = self._country, language = self._language,
-                             period = self._period, cookies = self._google_cookies, num = self._num,
-                             proxy = self._proxy)
+        return self.get_data(text = f'site:vk.com {text}', search_manager = self._search_manager)
 
     def get_discord(self, text):
-        return self.get_data(text = f'site:discord.com {text}', country = self._country,
-                             language = self._language, period = self._period, cookies = self._google_cookies,
-                             num = self._num, proxy = self._proxy)
+        return self.get_data(text = f'site:discord.com {text}', )
 
     def get_instagram(self, text):
-        return self.get_data(text = f'site:www.instagram.com {text}', country = self._country,
-                             language = self._language, period = self._period, cookies = self._google_cookies,
-                             num = self._num, proxy = self._proxy)
+        return self.get_data(text = f'site:www.instagram.com {text}', search_manager = self._search_manager)
 
     def get_instagram_hashtag(self, text):
-        return self.get_data(text = f'site:www.instagram.com #{text}', country = self._country,
-                             language = self._language, period = self._period, cookies = self._google_cookies,
-                             num = self._num, proxy = self._proxy)
+        return self.get_data(text = f'site:www.instagram.com #{text}', search_manager = self._search_manager)
 
     def get_instagram_reels(self, text):
-        return self.get_data(text = f'site:https://www.instagram.com inurl:reels #{text}', country = self._country,
-                             language = self._language, period = self._period, cookies = self._google_cookies,
-                             num = self._num, proxy = self._proxy)
+        return self.get_data(text = f'site:https://www.instagram.com inurl:reels #{text}', search_manager = self._search_manager)
 
     def get_youtube(self, text):
-        return self.get_data(text = f'site:youtube.com {text}', country = self._country,
-                             language = self._language, period = self._period, cookies = self._google_cookies,
-                             num = self._num, proxy = self._proxy)
+        return self.get_data(text = f'site:youtube.com {text}', search_manager = self._search_manager)
+
+
+class ManageGoogleSearch:
+
+    def error_handling(self, url, search_manager):
+        time.sleep(1800)
+        logger.info('Waiting for collection for 30 minutes')
+        logger.info("HTTP 429 detected...it's up to you to modify your search.")
+        url.remove("HTTP_429_DETECTED")
+        search_manager.proxy = self._proxy.get_proxy()
+        logger.info(search_manager.proxy)
+        url = url + search_manager.search()
+        if "HTTP_429_DETECTED" in url:
+            self.error_handling(url, search_manager)
+        url.remove("HTTP_429_DETECTED")
+        url.info("URLs found before HTTP 429 detected...")
+        for link in url:
+            url.append(link)
+        return link
+
+    def get_search_results(self, search_manager):
+        urls = []
+        search_manager.assign_random_user_agent()
+        url_collection = search_manager.search()
+        logger.info(url_collection)
+        time.sleep(30)
+        if "HTTP_429_DETECTED" in url_collection:
+            url_collection = self.error_handling(url_collection, search_manager)
+
+        for link in url_collection:
+            urls.append(link)
+        return urls
 
 
 class Country(Enum):

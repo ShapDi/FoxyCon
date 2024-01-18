@@ -55,8 +55,6 @@ class ContentTypeVK(ContentTypeAbstract):
         weight = re.split(r'/', self._weight)
         result = ''
         for type in VK:
-            print(weight)
-            print(re.split(r'-', self._weight))
             if type.name in weight:
                 result = VK[type.name].value
                 break
@@ -125,7 +123,6 @@ class DataAnalyzer:
     @staticmethod
     def get_social_media(link):
         match = re.split(r'(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?', link)
-        print(match)
         return [match[1], match[2]]
 
     @classmethod
@@ -137,7 +134,4 @@ class DataAnalyzer:
         data = self.get_social_media(self._link)
         type_post = self.get_type_post(data[0], data[1])
         return {'social_media': data[0], "type": type_post}
-
-
-# doc = DataAnalyzer(link = 'https://twitter.com/Spanish_Kortez/status/1738381113003786636').get_result()
 
