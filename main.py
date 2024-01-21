@@ -23,18 +23,17 @@ from foxycon.search_services import DataGoogleSearch, LanguageGoogle, TimeGoogle
 #
 
 
-ip_list = [
-    'http://zjMKKB:3ru9Pn@185.39.149.135:8000',
-    'http://zjMKKB:3ru9Pn@91.216.59.86:8000'
-]
+# ip_list = [
+#     'http://zjMKKB:3ru9Pn@185.39.149.135:8000',
+#     'http://zjMKKB:3ru9Pn@91.216.59.86:8000'
+# ]
 dad = DataGoogleSearch(language = LanguageGoogle.english.value,
                        country = CountryGoogle.india.value,
                        period = TimeGoogle.week.value,
                        num = 400,
-                       proxy = ip_list,
                        type_search = 'standard')
 
 reqvest = ['mostbet','1xbet', 'parimatch']
 
 for i in reqvest:
-    print(dad.get_instagram(i))
+    print(dad.get_instagram('mostbet'))

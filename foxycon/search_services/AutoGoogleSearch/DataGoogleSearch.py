@@ -117,12 +117,7 @@ class DataGoogleSearch:
 
     @staticmethod
     def get_data(text, search_manager):
-        one_manager = search_manager.get_proxy()
-        one_manager.query = text
-        one_manager.update_urls()
-        logger.info(one_manager.query)
-        logger.info(one_manager.proxy)
-        data = ManageGoogleSearch().get_search_results(search_manager = one_manager)
+        data = ManageGoogleSearch().get_search_results(text = text, search_manager = search_manager)
         return data
 
     def get_google_dork(self, text):
@@ -159,13 +154,14 @@ class DataGoogleSearch:
 class ManageGoogleSearch:
 
     def error_handling(self, url, search_manager):
+        logger.info('Waiting for collection for 30 minutes')
         time.sleep(1800)
         logger.info('Waiting for collection for 30 minutes')
         logger.info("HTTP 429 detected...it's up to you to modify your search.")
         url.remove("HTTP_429_DETECTED")
-        search_manager.proxy = self._proxy.get_proxy()
-        logger.info(search_manager.proxy)
-        url = url + search_manager.search()
+        one_manager = search_manager.get_proxy()
+        logger.info(one_manager)
+        url = url + one_manager.search()
         if "HTTP_429_DETECTED" in url:
             self.error_handling(url, search_manager)
         url.remove("HTTP_429_DETECTED")
@@ -174,14 +170,20 @@ class ManageGoogleSearch:
             url.append(link)
         return link
 
-    def get_search_results(self, search_manager):
+
+    def get_search_results(self, text,search_manager):
         urls = []
-        search_manager.assign_random_user_agent()
-        url_collection = search_manager.search()
+        one_manager = search_manager.get_proxy()
+        one_manager.query = text
+        one_manager.update_urls()
+        logger.info(one_manager.query)
+        logger.info(one_manager.proxy)
+        one_manager.assign_random_user_agent()
+        url_collection = one_manager.search()
         logger.info(url_collection)
-        time.sleep(30)
+        time.sleep(100)
         if "HTTP_429_DETECTED" in url_collection:
-            url_collection = self.error_handling(url_collection, search_manager)
+            url_collection = self.error_handling(url_collection, one_manager)
 
         for link in url_collection:
             urls.append(link)
