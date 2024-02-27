@@ -23,10 +23,10 @@ from foxycon.search_services import DataGoogleSearch, LanguageGoogle, TimeGoogle
 #
 
 
-# ip_list = [
-#     'http://zjMKKB:3ru9Pn@185.39.149.135:8000',
-#     'http://zjMKKB:3ru9Pn@91.216.59.86:8000'
-# ]
+ip_list = [
+    'http://zjMKKB:3ru9Pn@185.39.149.135:8000',
+    'http://zjMKKB:3ru9Pn@91.216.59.86:8000'
+]
 dad = DataGoogleSearch(language = LanguageGoogle.english.value,
                        country = CountryGoogle.india.value,
                        period = TimeGoogle.week.value,
