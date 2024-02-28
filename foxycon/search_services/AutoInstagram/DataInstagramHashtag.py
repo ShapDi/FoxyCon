@@ -78,9 +78,24 @@ class DataInstagramHashtag:
                 self.scrape_hashtag(hashtag, detail = detail, initial = False,
                                     end_cursor = end_cursor, maximum = maximum)
         self.session.close()
+
         return self.items
 
+    def get_data(self, text, max_results):
+        date_results = []
+        data = self.scrape_hashtag(text, maximum = max_results)
+        if data == []:
+            return 'No results'
+        else:
+            print(data)
+            for element in data:
+                print(element)
+                date_results.append({'text':f'{text}',
+                                     'link':f"https://www.instagram.com/p/{element.get('shortcode')}",
+                                     'caption':f"{element.get('caption')}"})
+        return date_results
 
 
-# scraper = DataInstagramHashtag()
-# # print(scraper.scrape_hashtag('1xbet', maximum = 100))
+scraper = DataInstagramHashtag()
+print(scraper.get_data('india', max_results = 100))
+

@@ -4172,3 +4172,337 @@
 2024-01-18 14:33:04,469 [MainThread  ] [INFO] Stats: start=100, num=100, total_valid_links_found=99 / max_search_result_urls_to_return=100
 2024-01-18 14:33:04,469 [MainThread  ] [INFO] Requesting URL: https://www.google.com/search?hl=en&lr=lang_en&q=site:www.instagram.com 1xbet&start=100&num=100&tbs=qdr:w&safe=off&cr=in&filter=0
 2024-01-18 14:33:05,358 [MainThread  ] [INFO] Found unique URL #100: https://www.instagram.com/deacon_famous/?next=%2Fnabila_dmar%2F&hl=hi
+2024-02-28 13:22:10,763 [MainThread  ] [WARNING] The largest value allowed by Google for num is 100.  Setting num to 100.
+2024-02-28 13:22:10,764 [MainThread  ] [INFO] Requesting URL: https://www.google.com/
+2024-02-28 13:22:11,185 [MainThread  ] [INFO] Stats: start=0, num=100, total_valid_links_found=0 / max_search_result_urls_to_return=100
+2024-02-28 13:22:11,185 [MainThread  ] [INFO] Requesting URL: https://www.google.com/search?hl=en&lr=lang_en&q=site:www.instagram.com mostbet&num=100&btnG=Google+Search&tbs=qdr:w&safe=off&cr=in&filter=0
+2024-02-28 13:22:12,137 [MainThread  ] [INFO] Found unique URL #1: https://www.instagram.com/mostbet_worldwide/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #2: https://www.instagram.com/p/C3m3tNtsjHa/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #3: https://www.instagram.com/p/C3sHvG8M4ZZ/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #4: https://www.instagram.com/mostbet_india8833/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #5: https://www.instagram.com/aviator_daromad/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #6: https://www.instagram.com/mostnews_egypt/reels/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #7: https://www.instagram.com/mostbet_____/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #8: https://www.instagram.com/canavarblya/reel/C33Bt9Kqw5S/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #9: https://www.instagram.com/mostbet_india/p/C3vSVpEtA4f/
+2024-02-28 13:22:12,148 [MainThread  ] [INFO] Found unique URL #10: https://www.instagram.com/thescore/p/C329KYLrJed/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #11: https://www.instagram.com/caruuu22/reel/C3sfiWoIWY6/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #12: https://www.instagram.com/sports.betting.win/reel/C3xUEtJiw0f/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #13: https://www.instagram.com/futbolistika.az/reel/C34WGRXMSmA/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #14: https://www.instagram.com/taurusofficialteam/p/C3ohAPXpd6o/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #15: https://www.instagram.com/canavarblya/reel/C32ZaRkKj9k/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #16: https://www.instagram.com/futbolistika.az/reel/C32TUFksRip/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #17: https://www.instagram.com/canavarblya/reel/C3z_1e_KOKn/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #18: https://www.instagram.com/canavarblya/reel/C3qChxxK95o/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #19: https://www.instagram.com/miyavblet/reel/C3rrCRZqYsG/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #20: https://www.instagram.com/predictor_5700/reel/C32z53PhTVo/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #21: https://www.instagram.com/paysafecard/p/C325H3mtKMe/
+2024-02-28 13:22:12,149 [MainThread  ] [INFO] Found unique URL #22: https://www.instagram.com/__hissizz/reel/C329HGBMjoJ/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #23: https://www.instagram.com/canavarblya/reel/C33FolKqDAJ/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #24: https://www.instagram.com/canavarblya/reel/C3sb2DAK7gY/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #25: https://www.instagram.com/canavarblya/reel/C3nV5p3qitq/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #26: https://www.instagram.com/futbolistika.az/reel/C311ZmzMtvd/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #27: https://www.instagram.com/mostnews_egypt/reel/C3ztNY9thO0/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #28: https://www.instagram.com/futbolistika.az/reel/C3zLp37M_Kq/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #29: https://www.instagram.com/miyavblet/reel/C3nJeC-qt2S/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #30: https://www.instagram.com/miyavblet/reel/C3nkPFjqnCc/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #31: https://www.instagram.com/futbolistika.az/reel/C3pvqQPM1nf/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #32: https://www.instagram.com/lemanistkarikatur/reels/
+2024-02-28 13:22:12,150 [MainThread  ] [INFO] Found unique URL #33: https://www.instagram.com/usman_al1mov/
+2024-02-28 13:22:12,151 [MainThread  ] [INFO] Found unique URL #34: https://www.instagram.com/jackybetttss/
+2024-02-28 13:22:12,152 [MainThread  ] [INFO] Found unique URL #35: https://www.instagram.com/mr.o_games/p/C3zsUgnt_CY/
+2024-02-28 13:22:12,152 [MainThread  ] [INFO] Found unique URL #36: https://www.instagram.com/reel/C3pkEr7yU9Y/
+2024-02-28 13:22:12,152 [MainThread  ] [INFO] Found unique URL #37: https://www.instagram.com/zoxaa2030/
+2024-02-28 13:22:12,152 [MainThread  ] [INFO] Found unique URL #38: https://www.instagram.com/football__shortss/reel/C3pV4K1JZa7/
+2024-02-28 13:22:12,152 [MainThread  ] [INFO] Found unique URL #39: https://www.instagram.com/canavarblya/reel/C3uxrYFK9mQ/
+2024-02-28 13:22:12,152 [MainThread  ] [INFO] Found unique URL #40: https://www.instagram.com/lotsaslots/p/C32MWhWN2w1/
+2024-02-28 13:22:12,152 [MainThread  ] [INFO] Found unique URL #41: https://www.instagram.com/smayka_oficiel/
+2024-02-28 13:22:12,152 [MainThread  ] [INFO] Found unique URL #42: https://www.instagram.com/reel/C28EhEaLO8I/
+2024-02-28 13:22:12,153 [MainThread  ] [INFO] Found unique URL #43: https://www.instagram.com/futbolistika.az/reel/C3qby_Fs-PT/
+2024-02-28 13:22:12,153 [MainThread  ] [INFO] Found unique URL #44: https://www.instagram.com/real_mathira/
+2024-02-28 13:22:12,153 [MainThread  ] [INFO] Found unique URL #45: https://www.instagram.com/veryfilmi/?next=%2Fp%2FCBU6kaXhks-%2F&ref=dpnac7bxpko&hl=af
+2024-02-28 13:22:12,153 [MainThread  ] [INFO] Found unique URL #46: https://www.instagram.com/_u/sinala7nina/?utm_source=ig_embed&ig_rid=04272f0c-adb5-4552-b268-670a4c505560&ig_mid=95DCFDB7-4C6D-4BDC-B30F-408B69C08A35
+2024-02-28 13:22:12,153 [MainThread  ] [INFO] Found unique URL #47: https://www.instagram.com/real_mathira/?next=%2Fp%2FBnEjr1vDKKt%2F&hl=ko
+2024-02-28 13:22:12,153 [MainThread  ] [INFO] Found unique URL #48: https://www.instagram.com/rooh_e_ihsas/?next=%2Fakaltbt12%2F&hl=af
+2024-02-28 13:22:12,153 [MainThread  ] [INFO] Found unique URL #49: https://www.instagram.com/futbolistika.az/reel/C3qZPW4MdtG/
+2024-02-28 13:22:12,153 [MainThread  ] [INFO] Found unique URL #50: https://www.instagram.com/sampamondal123/?next=%2Fhelinakl%2F&hl=cs
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #51: https://www.instagram.com/azeremix/reel/C3ni5R7skxf/
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #52: https://www.instagram.com/mr_amirul786/reels/
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #53: https://www.instagram.com/_u/sarasmayra_news/?utm_source=ig_embed&ig_rid=9d8a32f8-116f-466a-bb6a-f0eb35224fb6&ig_mid=536E9155-C52D-4880-A9CE-3697CF106203
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #54: https://www.instagram.com/sampamondal123/?ref=sTZh6&hl=da
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #55: https://www.instagram.com/sampamondal123/?next=%2Fmertdev%2Ftagged%2F&hl=fi
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #56: https://www.instagram.com/canavarblya/reel/C3nd5NYqTUz/
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #57: https://www.instagram.com/futbolistika.az/reel/C3zpBi5MQxl/
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #58: https://www.instagram.com/futbolistika.az/reel/C3pn20kMlQn/
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #59: https://www.instagram.com/veryfilmi/?next=%2Fgorettianamaria%2F&hl=hi
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #60: https://www.instagram.com/real_mathira/reel/C3ubdUZgKMX/
+2024-02-28 13:22:12,154 [MainThread  ] [INFO] Found unique URL #61: https://www.instagram.com/eap.kzo/
+2024-02-28 13:22:12,155 [MainThread  ] [INFO] Found unique URL #62: https://www.instagram.com/sampamondal123/?next=%2Fwashwizardsjp%2Ftagged%2F&ref=Instagram%20Panda&hl=fi
+2024-02-28 13:22:12,155 [MainThread  ] [INFO] Found unique URL #63: https://www.instagram.com/futbolistika.az/reel/C3uqFEDMIGq/
+2024-02-28 13:22:12,155 [MainThread  ] [INFO] Found unique URL #64: https://www.instagram.com/futbolistika.az/reel/C3qi-4JMo-Y/
+2024-02-28 13:22:12,155 [MainThread  ] [INFO] Found unique URL #65: https://www.instagram.com/rooh_e_ihsas/?ref=uy00q06rd3&hl=af
+2024-02-28 13:22:12,155 [MainThread  ] [INFO] Found unique URL #66: https://www.instagram.com/mr.o_games/?next=%2Fumsameh%2F&hl=hi
+2024-02-28 13:22:12,155 [MainThread  ] [INFO] Found unique URL #67: https://www.instagram.com/veryfilmi/?next=%2Fcrosstownbrewingcompany%2Ftagged%2F&ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:22:12,155 [MainThread  ] [INFO] Found unique URL #68: https://www.instagram.com/talentblinkmedia/
+2024-02-28 13:22:12,155 [MainThread  ] [INFO] Found unique URL #69: https://www.instagram.com/houseoffunsters/p/C3xXlz7JD45/
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #70: https://www.instagram.com/1xbet.india_official/p/C3o3owWIOgA/
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #71: https://www.instagram.com/p/C3t6msMuhJJ/
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #72: https://www.instagram.com/reel/C3qChxxK95o/
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #73: https://www.instagram.com/rooh_e_ihsas/?next=%2Flathamade%2Ftagged%2F&hl=da
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #74: https://www.instagram.com/reddyannaofficial/p/C3n45BNBEi_/
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #75: https://www.instagram.com/popslotscasino/reel/C3sN5tYNJTz/
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #76: https://www.instagram.com/reel/C3qgmF8qe1X/
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #77: https://www.instagram.com/1xbet.india_official/p/C3m6A95J-3P/
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #78: https://www.instagram.com/imisli_mebel/?ref=samito&hl=en
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #79: https://www.instagram.com/_u/sarasmayra_news/?utm_source=ig_embed&ig_rid=9c62ca6d-6c76-4390-a3ed-c63705a74a47&ig_mid=9D40FBE5-E2AA-4A23-A9BE-193C2EB89211
+2024-02-28 13:22:12,156 [MainThread  ] [INFO] Found unique URL #80: https://www.instagram.com/spinmatchofficial/p/C3rkKd3SWGm/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #81: https://www.instagram.com/1xbet.india_official/?next=%2Fhayariparisau%2Ftagged%2F&ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #82: https://www.instagram.com/lotus365world/p/C3n4PlEybC-/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #83: https://www.instagram.com/reel/C3qi-4JMo-Y/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qi-4JMo-Y/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #84: https://www.instagram.com/reel/C3mymFzsl5S/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #85: https://www.instagram.com/reel/C3m_-lRIVmw/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3m_-lRIVmw/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #86: https://www.instagram.com/real_mathira/reels/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #87: https://www.instagram.com/skyexch/p/C3m8IKTLSwN/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #88: https://www.instagram.com/reel/C3nuThrsBDU/
+2024-02-28 13:22:12,157 [MainThread  ] [INFO] Found unique URL #89: https://www.instagram.com/1xbet.india_official/?next=%2Fvilleb%2F&hl=hi
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Found unique URL #90: https://www.instagram.com/reel/Czq52tiMb4V/?ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/Czq52tiMb4V/?ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Found unique URL #91: https://www.instagram.com/p/C3sfKrULHCe/
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Found unique URL #92: https://www.instagram.com/reel/C3qITKaovgZ/
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qITKaovgZ/
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Found unique URL #93: https://www.instagram.com/reel/C3rQ_J6IPmQ/
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3rQ_J6IPmQ/
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Found unique URL #94: https://www.instagram.com/reel/CydRXgtMjWp/?next=%2Fkaranpanesarmusic%2Ffeed%2F&hl=es-la
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Found unique URL #95: https://www.instagram.com/qabilturkoglulive/
+2024-02-28 13:22:12,158 [MainThread  ] [INFO] Found unique URL #96: https://www.instagram.com/zehin.klubu/
+2024-02-28 13:22:12,159 [MainThread  ] [INFO] Found unique URL #97: https://www.instagram.com/reel/C3pZIs4vzgm/
+2024-02-28 13:22:12,159 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3pZIs4vzgm/
+2024-02-28 13:22:12,159 [MainThread  ] [INFO] Found unique URL #98: https://www.instagram.com/reel/C3qkD54sXt9/
+2024-02-28 13:22:12,159 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qkD54sXt9/
+2024-02-28 13:22:12,159 [MainThread  ] [INFO] Found unique URL #99: https://www.instagram.com/al_media.agency/
+2024-02-28 13:22:12,159 [MainThread  ] [INFO] Found unique URL #100: https://www.instagram.com/morningbrew/?next=%2Famaequest%2Ffeed%2F&hl=el
+2024-02-28 13:23:52,165 [MainThread  ] [INFO] Requesting URL: https://www.google.com/
+2024-02-28 13:23:52,772 [MainThread  ] [INFO] Stats: start=0, num=100, total_valid_links_found=0 / max_search_result_urls_to_return=100
+2024-02-28 13:23:52,772 [MainThread  ] [INFO] Requesting URL: https://www.google.com/search?hl=en&lr=lang_en&q=site:www.instagram.com mostbet&num=100&btnG=Google+Search&tbs=qdr:w&safe=off&cr=in&filter=0
+2024-02-28 13:23:53,997 [MainThread  ] [INFO] Found unique URL #1: https://www.instagram.com/mostbet_worldwide/
+2024-02-28 13:23:53,997 [MainThread  ] [INFO] Found unique URL #2: https://www.instagram.com/aviator_daromad/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #3: https://www.instagram.com/p/C3m3tNtsjHa/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #4: https://www.instagram.com/p/C3sHvG8M4ZZ/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #5: https://www.instagram.com/mostbet_india8833/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #6: https://www.instagram.com/mostnews_egypt/reels/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #7: https://www.instagram.com/mostbet_____/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #8: https://www.instagram.com/canavarblya/reel/C33Bt9Kqw5S/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #9: https://www.instagram.com/mostbet_india/p/C3vSVpEtA4f/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #10: https://www.instagram.com/futbolistika.az/reel/C34WGRXMSmA/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #11: https://www.instagram.com/taurusofficialteam/p/C3ohAPXpd6o/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #12: https://www.instagram.com/canavarblya/reel/C32ZaRkKj9k/
+2024-02-28 13:23:53,998 [MainThread  ] [INFO] Found unique URL #13: https://www.instagram.com/thescore/p/C329KYLrJed/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #14: https://www.instagram.com/caruuu22/reel/C3sfiWoIWY6/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #15: https://www.instagram.com/futbolistika.az/reel/C32TUFksRip/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #16: https://www.instagram.com/sports.betting.win/reel/C3xUEtJiw0f/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #17: https://www.instagram.com/canavarblya/reel/C3nV5p3qitq/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #18: https://www.instagram.com/mostnews_egypt/reel/C3ztNY9thO0/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #19: https://www.instagram.com/futbolistika.az/reel/C3zLp37M_Kq/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #20: https://www.instagram.com/futbolistika.az/reel/C3pvqQPM1nf/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #21: https://www.instagram.com/lemanistkarikatur/reels/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #22: https://www.instagram.com/canavarblya/reel/C3z_1e_KOKn/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #23: https://www.instagram.com/jackybetttss/
+2024-02-28 13:23:53,999 [MainThread  ] [INFO] Found unique URL #24: https://www.instagram.com/canavarblya/reel/C3qChxxK95o/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #25: https://www.instagram.com/futbolistika.az/reel/C311ZmzMtvd/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #26: https://www.instagram.com/miyavblet/reel/C3rrCRZqYsG/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #27: https://www.instagram.com/predictor_5700/reel/C32z53PhTVo/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #28: https://www.instagram.com/paysafecard/p/C325H3mtKMe/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #29: https://www.instagram.com/zoxaa2030/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #30: https://www.instagram.com/__hissizz/reel/C329HGBMjoJ/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #31: https://www.instagram.com/canavarblya/reel/C33FolKqDAJ/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #32: https://www.instagram.com/lotsaslots/p/C32MWhWN2w1/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #33: https://www.instagram.com/canavarblya/reel/C3sb2DAK7gY/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #34: https://www.instagram.com/smayka_oficiel/
+2024-02-28 13:23:54,000 [MainThread  ] [INFO] Found unique URL #35: https://www.instagram.com/miyavblet/reel/C3nJeC-qt2S/
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #36: https://www.instagram.com/futbolistika.az/reel/C3qby_Fs-PT/
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #37: https://www.instagram.com/miyavblet/reel/C3nkPFjqnCc/
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #38: https://www.instagram.com/usman_al1mov/
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #39: https://www.instagram.com/real_mathira/
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #40: https://www.instagram.com/mr.o_games/p/C3zsUgnt_CY/
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #41: https://www.instagram.com/reel/C3pkEr7yU9Y/
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #42: https://www.instagram.com/real_mathira/?next=%2Fp%2FBnEjr1vDKKt%2F&hl=ko
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #43: https://www.instagram.com/futbolistika.az/reel/C3qZPW4MdtG/
+2024-02-28 13:23:54,002 [MainThread  ] [INFO] Found unique URL #44: https://www.instagram.com/football__shortss/reel/C3pV4K1JZa7/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #45: https://www.instagram.com/canavarblya/reel/C3uxrYFK9mQ/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #46: https://www.instagram.com/azeremix/reel/C3ni5R7skxf/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #47: https://www.instagram.com/mr_amirul786/reels/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #48: https://www.instagram.com/_u/sarasmayra_news/?utm_source=ig_embed&ig_rid=9d8a32f8-116f-466a-bb6a-f0eb35224fb6&ig_mid=536E9155-C52D-4880-A9CE-3697CF106203
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #49: https://www.instagram.com/canavarblya/reel/C3nd5NYqTUz/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #50: https://www.instagram.com/futbolistika.az/reel/C3zpBi5MQxl/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #51: https://www.instagram.com/futbolistika.az/reel/C3pn20kMlQn/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #52: https://www.instagram.com/real_mathira/reel/C3ubdUZgKMX/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #53: https://www.instagram.com/reel/C28EhEaLO8I/
+2024-02-28 13:23:54,003 [MainThread  ] [INFO] Found unique URL #54: https://www.instagram.com/eap.kzo/
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #55: https://www.instagram.com/futbolistika.az/reel/C3uqFEDMIGq/
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #56: https://www.instagram.com/veryfilmi/?next=%2Fp%2FCBU6kaXhks-%2F&ref=dpnac7bxpko&hl=af
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #57: https://www.instagram.com/_u/sinala7nina/?utm_source=ig_embed&ig_rid=04272f0c-adb5-4552-b268-670a4c505560&ig_mid=95DCFDB7-4C6D-4BDC-B30F-408B69C08A35
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #58: https://www.instagram.com/futbolistika.az/reel/C3qi-4JMo-Y/
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #59: https://www.instagram.com/rooh_e_ihsas/?next=%2Fakaltbt12%2F&hl=af
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #60: https://www.instagram.com/sampamondal123/?next=%2Fhelinakl%2F&hl=cs
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #61: https://www.instagram.com/sampamondal123/?ref=sTZh6&hl=da
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #62: https://www.instagram.com/sampamondal123/?next=%2Fmertdev%2Ftagged%2F&hl=fi
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #63: https://www.instagram.com/veryfilmi/?next=%2Fgorettianamaria%2F&hl=hi
+2024-02-28 13:23:54,004 [MainThread  ] [INFO] Found unique URL #64: https://www.instagram.com/sampamondal123/?next=%2Fwashwizardsjp%2Ftagged%2F&ref=Instagram%20Panda&hl=fi
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #65: https://www.instagram.com/rooh_e_ihsas/?ref=uy00q06rd3&hl=af
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #66: https://www.instagram.com/popslotscasino/reel/C3sN5tYNJTz/
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #67: https://www.instagram.com/mr.o_games/?next=%2Fumsameh%2F&hl=hi
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #68: https://www.instagram.com/veryfilmi/?next=%2Fcrosstownbrewingcompany%2Ftagged%2F&ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #69: https://www.instagram.com/talentblinkmedia/
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #70: https://www.instagram.com/imisli_mebel/?ref=samito&hl=en
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #71: https://www.instagram.com/houseoffunsters/p/C3xXlz7JD45/
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #72: https://www.instagram.com/_u/sarasmayra_news/?utm_source=ig_embed&ig_rid=9c62ca6d-6c76-4390-a3ed-c63705a74a47&ig_mid=9D40FBE5-E2AA-4A23-A9BE-193C2EB89211
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #73: https://www.instagram.com/1xbet.india_official/?next=%2Fhayariparisau%2Ftagged%2F&ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:23:54,005 [MainThread  ] [INFO] Found unique URL #74: https://www.instagram.com/1xbet.india_official/p/C3o3owWIOgA/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #75: https://www.instagram.com/lotus365world/p/C3n4PlEybC-/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #76: https://www.instagram.com/p/C3t6msMuhJJ/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #77: https://www.instagram.com/reel/C3qi-4JMo-Y/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qi-4JMo-Y/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #78: https://www.instagram.com/reel/C3qChxxK95o/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #79: https://www.instagram.com/rooh_e_ihsas/?next=%2Flathamade%2Ftagged%2F&hl=da
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #80: https://www.instagram.com/reddyannaofficial/p/C3n45BNBEi_/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #81: https://www.instagram.com/reel/C3qgmF8qe1X/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #82: https://www.instagram.com/reel/C3m_-lRIVmw/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3m_-lRIVmw/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #83: https://www.instagram.com/real_mathira/reels/
+2024-02-28 13:23:54,006 [MainThread  ] [INFO] Found unique URL #84: https://www.instagram.com/1xbet.india_official/p/C3m6A95J-3P/
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Found unique URL #85: https://www.instagram.com/1xbet.india_official/?next=%2Fvilleb%2F&hl=hi
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Found unique URL #86: https://www.instagram.com/spinmatchofficial/p/C3rkKd3SWGm/
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Found unique URL #87: https://www.instagram.com/reel/Czq52tiMb4V/?ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/Czq52tiMb4V/?ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Found unique URL #88: https://www.instagram.com/reel/C3mymFzsl5S/
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Found unique URL #89: https://www.instagram.com/skyexch/p/C3m8IKTLSwN/
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Found unique URL #90: https://www.instagram.com/reel/C3nuThrsBDU/
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Found unique URL #91: https://www.instagram.com/reel/C3qkD54sXt9/
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qkD54sXt9/
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Found unique URL #92: https://www.instagram.com/reel/C3qITKaovgZ/
+2024-02-28 13:23:54,007 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qITKaovgZ/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Found unique URL #93: https://www.instagram.com/reel/C3rQ_J6IPmQ/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3rQ_J6IPmQ/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Found unique URL #94: https://www.instagram.com/p/C3sfKrULHCe/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Found unique URL #95: https://www.instagram.com/reel/CydRXgtMjWp/?next=%2Fkaranpanesarmusic%2Ffeed%2F&hl=es-la
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Found unique URL #96: https://www.instagram.com/qabilturkoglulive/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Found unique URL #97: https://www.instagram.com/zehin.klubu/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Found unique URL #98: https://www.instagram.com/reel/C3pZIs4vzgm/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3pZIs4vzgm/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Found unique URL #99: https://www.instagram.com/al_media.agency/
+2024-02-28 13:23:54,008 [MainThread  ] [INFO] Found unique URL #100: https://www.instagram.com/morningbrew/?next=%2Famaequest%2Ffeed%2F&hl=el
+2024-02-28 13:25:34,029 [MainThread  ] [INFO] Requesting URL: https://www.google.com/
+2024-02-28 13:25:34,480 [MainThread  ] [INFO] Stats: start=0, num=100, total_valid_links_found=0 / max_search_result_urls_to_return=100
+2024-02-28 13:25:34,480 [MainThread  ] [INFO] Requesting URL: https://www.google.com/search?hl=en&lr=lang_en&q=site:www.instagram.com mostbet&num=100&btnG=Google+Search&tbs=qdr:w&safe=off&cr=in&filter=0
+2024-02-28 13:25:35,451 [MainThread  ] [INFO] Found unique URL #1: https://www.instagram.com/mostbet_worldwide/
+2024-02-28 13:25:35,451 [MainThread  ] [INFO] Found unique URL #2: https://www.instagram.com/aviator_daromad/
+2024-02-28 13:25:35,451 [MainThread  ] [INFO] Found unique URL #3: https://www.instagram.com/p/C3m3tNtsjHa/
+2024-02-28 13:25:35,451 [MainThread  ] [INFO] Found unique URL #4: https://www.instagram.com/p/C3sHvG8M4ZZ/
+2024-02-28 13:25:35,451 [MainThread  ] [INFO] Found unique URL #5: https://www.instagram.com/mostbet_india8833/
+2024-02-28 13:25:35,451 [MainThread  ] [INFO] Found unique URL #6: https://www.instagram.com/mostnews_egypt/reels/
+2024-02-28 13:25:35,451 [MainThread  ] [INFO] Found unique URL #7: https://www.instagram.com/mostbet_____/
+2024-02-28 13:25:35,451 [MainThread  ] [INFO] Found unique URL #8: https://www.instagram.com/canavarblya/reel/C33Bt9Kqw5S/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #9: https://www.instagram.com/mostbet_india/p/C3vSVpEtA4f/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #10: https://www.instagram.com/futbolistika.az/reel/C34WGRXMSmA/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #11: https://www.instagram.com/taurusofficialteam/p/C3ohAPXpd6o/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #12: https://www.instagram.com/canavarblya/reel/C32ZaRkKj9k/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #13: https://www.instagram.com/thescore/p/C329KYLrJed/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #14: https://www.instagram.com/caruuu22/reel/C3sfiWoIWY6/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #15: https://www.instagram.com/futbolistika.az/reel/C32TUFksRip/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #16: https://www.instagram.com/sports.betting.win/reel/C3xUEtJiw0f/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #17: https://www.instagram.com/canavarblya/reel/C3nV5p3qitq/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #18: https://www.instagram.com/mostnews_egypt/reel/C3ztNY9thO0/
+2024-02-28 13:25:35,452 [MainThread  ] [INFO] Found unique URL #19: https://www.instagram.com/futbolistika.az/reel/C3zLp37M_Kq/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #20: https://www.instagram.com/futbolistika.az/reel/C3pvqQPM1nf/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #21: https://www.instagram.com/lemanistkarikatur/reels/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #22: https://www.instagram.com/canavarblya/reel/C3z_1e_KOKn/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #23: https://www.instagram.com/jackybetttss/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #24: https://www.instagram.com/canavarblya/reel/C3qChxxK95o/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #25: https://www.instagram.com/miyavblet/reel/C3rrCRZqYsG/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #26: https://www.instagram.com/predictor_5700/reel/C32z53PhTVo/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #27: https://www.instagram.com/paysafecard/p/C325H3mtKMe/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #28: https://www.instagram.com/zoxaa2030/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #29: https://www.instagram.com/__hissizz/reel/C329HGBMjoJ/
+2024-02-28 13:25:35,453 [MainThread  ] [INFO] Found unique URL #30: https://www.instagram.com/canavarblya/reel/C33FolKqDAJ/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #31: https://www.instagram.com/lotsaslots/p/C32MWhWN2w1/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #32: https://www.instagram.com/canavarblya/reel/C3sb2DAK7gY/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #33: https://www.instagram.com/futbolistika.az/reel/C311ZmzMtvd/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #34: https://www.instagram.com/smayka_oficiel/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #35: https://www.instagram.com/miyavblet/reel/C3nJeC-qt2S/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #36: https://www.instagram.com/futbolistika.az/reel/C3qby_Fs-PT/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #37: https://www.instagram.com/miyavblet/reel/C3nkPFjqnCc/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #38: https://www.instagram.com/usman_al1mov/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #39: https://www.instagram.com/real_mathira/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #40: https://www.instagram.com/mr.o_games/p/C3zsUgnt_CY/
+2024-02-28 13:25:35,454 [MainThread  ] [INFO] Found unique URL #41: https://www.instagram.com/reel/C3pkEr7yU9Y/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #42: https://www.instagram.com/real_mathira/?next=%2Fp%2FBnEjr1vDKKt%2F&hl=ko
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #43: https://www.instagram.com/futbolistika.az/reel/C3qZPW4MdtG/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #44: https://www.instagram.com/football__shortss/reel/C3pV4K1JZa7/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #45: https://www.instagram.com/canavarblya/reel/C3uxrYFK9mQ/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #46: https://www.instagram.com/azeremix/reel/C3ni5R7skxf/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #47: https://www.instagram.com/mr_amirul786/reels/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #48: https://www.instagram.com/_u/sarasmayra_news/?utm_source=ig_embed&ig_rid=9d8a32f8-116f-466a-bb6a-f0eb35224fb6&ig_mid=536E9155-C52D-4880-A9CE-3697CF106203
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #49: https://www.instagram.com/canavarblya/reel/C3nd5NYqTUz/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #50: https://www.instagram.com/futbolistika.az/reel/C3zpBi5MQxl/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #51: https://www.instagram.com/futbolistika.az/reel/C3pn20kMlQn/
+2024-02-28 13:25:35,455 [MainThread  ] [INFO] Found unique URL #52: https://www.instagram.com/real_mathira/reel/C3ubdUZgKMX/
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #53: https://www.instagram.com/reel/C28EhEaLO8I/
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #54: https://www.instagram.com/eap.kzo/
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #55: https://www.instagram.com/futbolistika.az/reel/C3uqFEDMIGq/
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #56: https://www.instagram.com/veryfilmi/?next=%2Fp%2FCBU6kaXhks-%2F&ref=dpnac7bxpko&hl=af
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #57: https://www.instagram.com/_u/sinala7nina/?utm_source=ig_embed&ig_rid=04272f0c-adb5-4552-b268-670a4c505560&ig_mid=95DCFDB7-4C6D-4BDC-B30F-408B69C08A35
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #58: https://www.instagram.com/futbolistika.az/reel/C3qi-4JMo-Y/
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #59: https://www.instagram.com/rooh_e_ihsas/?next=%2Fakaltbt12%2F&hl=af
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #60: https://www.instagram.com/sampamondal123/?next=%2Fhelinakl%2F&hl=cs
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #61: https://www.instagram.com/sampamondal123/?ref=sTZh6&hl=da
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #62: https://www.instagram.com/sampamondal123/?next=%2Fmertdev%2Ftagged%2F&hl=fi
+2024-02-28 13:25:35,456 [MainThread  ] [INFO] Found unique URL #63: https://www.instagram.com/veryfilmi/?next=%2Fgorettianamaria%2F&hl=hi
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #64: https://www.instagram.com/sampamondal123/?next=%2Fwashwizardsjp%2Ftagged%2F&ref=Instagram%20Panda&hl=fi
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #65: https://www.instagram.com/rooh_e_ihsas/?ref=uy00q06rd3&hl=af
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #66: https://www.instagram.com/popslotscasino/reel/C3sN5tYNJTz/
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #67: https://www.instagram.com/mr.o_games/?next=%2Fumsameh%2F&hl=hi
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #68: https://www.instagram.com/veryfilmi/?next=%2Fcrosstownbrewingcompany%2Ftagged%2F&ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #69: https://www.instagram.com/talentblinkmedia/
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #70: https://www.instagram.com/imisli_mebel/?ref=samito&hl=en
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #71: https://www.instagram.com/houseoffunsters/p/C3xXlz7JD45/
+2024-02-28 13:25:35,457 [MainThread  ] [INFO] Found unique URL #72: https://www.instagram.com/_u/sarasmayra_news/?utm_source=ig_embed&ig_rid=9c62ca6d-6c76-4390-a3ed-c63705a74a47&ig_mid=9D40FBE5-E2AA-4A23-A9BE-193C2EB89211
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #73: https://www.instagram.com/1xbet.india_official/?next=%2Fhayariparisau%2Ftagged%2F&ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #74: https://www.instagram.com/1xbet.india_official/p/C3o3owWIOgA/
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #75: https://www.instagram.com/lotus365world/p/C3n4PlEybC-/
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #76: https://www.instagram.com/p/C3t6msMuhJJ/
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #77: https://www.instagram.com/reel/C3qi-4JMo-Y/
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qi-4JMo-Y/
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #78: https://www.instagram.com/reel/C3qChxxK95o/
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #79: https://www.instagram.com/rooh_e_ihsas/?next=%2Flathamade%2Ftagged%2F&hl=da
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #80: https://www.instagram.com/reddyannaofficial/p/C3n45BNBEi_/
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #81: https://www.instagram.com/reel/C3qgmF8qe1X/
+2024-02-28 13:25:35,458 [MainThread  ] [INFO] Found unique URL #82: https://www.instagram.com/reel/C3m_-lRIVmw/
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3m_-lRIVmw/
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Found unique URL #83: https://www.instagram.com/real_mathira/reels/
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Found unique URL #84: https://www.instagram.com/1xbet.india_official/p/C3m6A95J-3P/
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Found unique URL #85: https://www.instagram.com/1xbet.india_official/?next=%2Fvilleb%2F&hl=hi
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Found unique URL #86: https://www.instagram.com/spinmatchofficial/p/C3rkKd3SWGm/
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Found unique URL #87: https://www.instagram.com/reel/Czq52tiMb4V/?ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/Czq52tiMb4V/?ref=Dirty%2BInstagram&hl=hi
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Found unique URL #88: https://www.instagram.com/skyexch/p/C3m8IKTLSwN/
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Found unique URL #89: https://www.instagram.com/reel/C3nuThrsBDU/
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Found unique URL #90: https://www.instagram.com/reel/C3qITKaovgZ/
+2024-02-28 13:25:35,459 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qITKaovgZ/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Found unique URL #91: https://www.instagram.com/reel/C3qkD54sXt9/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3qkD54sXt9/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Found unique URL #92: https://www.instagram.com/reel/C3rQ_J6IPmQ/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3rQ_J6IPmQ/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Found unique URL #93: https://www.instagram.com/p/C3sfKrULHCe/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Found unique URL #94: https://www.instagram.com/qabilturkoglulive/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Found unique URL #95: https://www.instagram.com/reel/CydRXgtMjWp/?next=%2Fkaranpanesarmusic%2Ffeed%2F&hl=es-la
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Found unique URL #96: https://www.instagram.com/zehin.klubu/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Found unique URL #97: https://www.instagram.com/reel/C3pZIs4vzgm/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Duplicate URL found: https://www.instagram.com/reel/C3pZIs4vzgm/
+2024-02-28 13:25:35,460 [MainThread  ] [INFO] Found unique URL #98: https://www.instagram.com/al_media.agency/
+2024-02-28 13:25:35,461 [MainThread  ] [INFO] Found unique URL #99: https://www.instagram.com/morningbrew/?next=%2Famaequest%2Ffeed%2F&hl=el
+2024-02-28 13:25:35,461 [MainThread  ] [INFO] Sleeping 13 seconds until retrieving the next page of results...
+2024-02-28 13:25:48,474 [MainThread  ] [INFO] Stats: start=100, num=100, total_valid_links_found=99 / max_search_result_urls_to_return=100
+2024-02-28 13:25:48,474 [MainThread  ] [INFO] Requesting URL: https://www.google.com/search?hl=en&lr=lang_en&q=site:www.instagram.com mostbet&start=100&num=100&tbs=qdr:w&safe=off&cr=in&filter=0
+2024-02-28 13:25:49,269 [MainThread  ] [INFO] No valid search results found on this page.  Moving on...
