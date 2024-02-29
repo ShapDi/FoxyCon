@@ -23,7 +23,11 @@ class DataInstagramHashtag:
         self.rhx_gis = None
 
     def scrape_hashtag(self, hashtag, end_cursor = '', maximum = 10, first = 10,
-                       initial = True, detail = False):
+                       initial = True, detail = False, proxy = []):
+
+        if proxy != []:
+            self.session.proxies = proxy
+
         if initial:
             self.items = []
 
