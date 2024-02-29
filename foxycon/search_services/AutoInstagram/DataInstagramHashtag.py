@@ -1,3 +1,5 @@
+import re
+
 import requests
 
 
@@ -29,7 +31,8 @@ class DataInstagramHashtag:
             params = QUERY_HASHTAG_VARS.format(hashtag, 10, end_cursor)
             response = self.session.get(QUERY_HASHTAG.format(params)).json()
             data = response['data']['hashtag']
-        except Exception:
+        except Exception as ex:
+            print(ex)
             self.session.close()
             return []
 
@@ -87,15 +90,17 @@ class DataInstagramHashtag:
         if data == []:
             return 'No results'
         else:
-            print(data)
             for element in data:
-                print(element)
+                if element.get('caption') is None:
+                    hashtags = 'There are no hashtags'
+                else:
+                    hashtags = re.findall(r'\#\w+', element.get('caption'))
                 date_results.append({'text':f'{text}',
                                      'link':f"https://www.instagram.com/p/{element.get('shortcode')}",
-                                     'caption':f"{element.get('caption')}"})
+                                     'caption': hashtags})
         return date_results
 
 
 scraper = DataInstagramHashtag()
-print(scraper.get_data('india', max_results = 100))
+print(scraper.get_data('1xbet', max_results = 100))
 
