@@ -1,15 +1,15 @@
 import time
 import logging
-import urllib
 from enum import Enum
 
 import yagooglesearch
 from googletrans import Translator
 
+from foxycon.utils import AutomaticSessionRecipient
 from foxycon.search_services.exception import ExceptionLanguageFormat, \
     ExceptionCountryFormat
-from foxycon.utils.AutoSessionRecipient import AutomaticSessionRecipient
-from foxycon.utils.AutoManagementProxy import AutoManagementProxy
+from foxycon.utils import AutoManagementProxy
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

@@ -1,5 +1,3 @@
-from foxycon.search_services import DataFBAdsLib, CountryAds
-from foxycon.utils.AutoTablePacker import AutoTablePacker
 from foxycon.search_services import DataGoogleSearch, LanguageGoogle, TimeGoogle, CountryGoogle
 
 # data = DataGoogleSearch(language = 'lang_e', country = 'CA', period = 'year')

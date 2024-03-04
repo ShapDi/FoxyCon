@@ -2,6 +2,7 @@ import re
 
 import requests
 
+from foxycon.utils import AutoManagementProxy
 
 BASE_URL = 'https://www.instagram.com/'
 MEDIA_URL = BASE_URL + 'p/{0}/?__a=1'
@@ -13,20 +14,42 @@ QUERY_HASHTAG_VARS = '{{"tag_name":"{0}","first":{1},"after":"{2}"}}'
 CHROME_WIN_UA = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 ' \
                 '(KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
 
+ip_list_india = [
+    'http://XpchYn:HtatoG@5.101.34.75:8000',
+    'http://XpchYn:HtatoG@5.101.34.192:8000',
+    'http://XpchYn:HtatoG@5.101.34.108:8000',
+    'http://XpchYn:HtatoG@5.101.34.4:8000',
+    'http://XpchYn:HtatoG@5.101.34.122:8000'
+]
+
+proxy_list = [
+    "http://c060c353:6f33c6c151@185.64.250.158:30010",
+    "http://c060c353:6f33c6c151@185.64.250.191:30010",
+    "http://c060c353:6f33c6c151@85.31.51.154:30010",
+    "http://c060c353:6f33c6c151@85.31.50.115:30010",
+    "http://c060c353:6f33c6c151@85.31.48.157:30010",
+]
+
+proxy = AutoManagementProxy(proxy = proxy_list)
+
+
 
 class DataInstagramHashtag:
-    def __init__(self):
+    def __init__(self, proxy:AutoManagementProxy = []):
         self.items = []
         self.session = requests.Session()
-        self.session.headers = {'user-agent': CHROME_WIN_UA}
-        self.session.cookies.set('ig_pr', '1')
         self.rhx_gis = None
+        self.proxy = proxy
 
     def scrape_hashtag(self, hashtag, end_cursor = '', maximum = 10, first = 10,
-                       initial = True, detail = False, proxy = []):
+                       initial = True, detail = False):
 
-        if proxy != []:
-            self.session.proxies = proxy
+        self.session.headers = {'user-agent': CHROME_WIN_UA}
+        self.session.cookies.set('ig_pr', '1')
+
+        if self.proxy != []:
+            self.session.proxies = {'https': self.proxy.get_proxy()}
+
 
         if initial:
             self.items = []
@@ -99,12 +122,13 @@ class DataInstagramHashtag:
                     hashtags = 'There are no hashtags'
                 else:
                     hashtags = re.findall(r'\#\w+', element.get('caption'))
-                date_results.append({'text':f'{text}',
-                                     'link':f"https://www.instagram.com/p/{element.get('shortcode')}",
-                                     'caption': hashtags})
+                print(element)
+                date_results.append({'text': f'{text}',
+                                     'link': f"https://www.instagram.com/p/{element.get('shortcode')}",
+                                     'caption': hashtags,
+                                     'photo':element.get('thumbnail_src')})
         return date_results
 
 
-scraper = DataInstagramHashtag()
-print(scraper.get_data('1xbet', max_results = 100))
-
+# scraper = DataInstagramHashtag(proxy = proxy)
+# print(scraper.get_data('india', max_results = 100))
